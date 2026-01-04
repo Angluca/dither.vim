@@ -12,6 +12,7 @@ au filetype dither call LspAddServer([#{
             \    name: 'dither',
             \    filetype: ['dither'],
             \    path: 'clangd',
+            \    args: ['--background-index']
             \  }])
 ```
 

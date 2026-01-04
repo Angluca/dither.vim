@@ -2,14 +2,15 @@ if exists("b:current_syntax")
     finish
 endif
 
-syn keyword ditherKeyword func
+syn keyword ditherKeyword func embed
 syn keyword ditherKeyword def const static pub
-syn keyword ditherKeyword typdef enum union
 
 syn keyword ditherType bool char rchar byte void string ptrdiff untyped typed
 syn keyword ditherType i8 i16 i32 i64 u8 u16 u32 u64 isize usize size
 syn keyword ditherType int uint long ulong
 syn keyword ditherType float f32 f64
+syn keyword ditherType str list vec dict tup arr geom guts io math exch
+syn keyword ditherType drw frag time rand snd rdr req win vin img font
 
 syn keyword ditherSelf self this
 syn keyword ditherLabel default ref as
@@ -26,7 +27,6 @@ syn keyword ditherInclude export include extern when foreign opaque
 
 syn keyword ditherException throw try catch cast unsafe raw
 syn keyword ditherPanic panic enforce
-"syn keyword ditherSuper   private
 
 syn match ditherTitle      '[@!?]'
 syn match ditherSymbol     '[,;:\.]'
@@ -38,24 +38,21 @@ syn match ditherType       '\v<\w+_[tscemui]>'
 syn match ditherMacro      '\v<[_]*\u[A-Z0-9_]*>'
 syn match ditherType       '\v<[_]*\u[A-Z0-9_]*[a-z]+\w*>'
 syn match ditherType       '\v\.?\zs<([iu][0-9]{1,3})?>'
-syn match ditherRepeat     '\v([^\.](\.|::|-\>))@<=\w\w*'
+syn match ditherRepeat     '\v([^\.](\.|\.{3}|::|-\>))@<=\w\w*'
 syn match ditherType       '\v<\w+>\ze(::|\<(\w+\s*(\<.*\>|\[.*\])?\s*[,]?\s*)*\>)' "foo<T>()
 syn match ditherFunc       '\v[_]*\l\w*\ze((\[.*\])|((::)?\<.*\>))*\s*\('
 
 syn match ditherException  '\v(\W@<=[~&!*]+\ze[\(\[\{\<]*[-]?\w)|(\w@<=[*!?]+\ze\W)'
-syn match ditherStruct     '\v((typedef|struct|enum|union)(\[.*\])?\s*)@<=[_]*\w+\ze(\[.*\])?\s*(\(|\{)'
+syn match ditherStruct     '\v((typedef|struct|enum|union|namespace)(\[.*\])?\s*)@<=[_]*\w+\ze(\[.*\])?\s*(\(|\{)'
 
-syn match ditherInclude    '\v^\s*use .*[^(]'
+syn match ditherInclude    '\v^\s*include .*'
 syn match ditherMacro      '\v^\s*\[.{-}\]'
-syn match ditherType       '\v<(str)\ze\s*\('
-syn match ditherSMacro     '\v<(reduce|deref|list)\ze\s*\('
-syn match ditherLabel      '\v<(addr)\ze\s*\('
 syn match ditherAdded      '\v^\s*<(test)\ze\s*\{'
 syn match ditherLabel      '\v<\@(\w+)>'
 
 " -- shader
-syn match ditherKeyword    '\v<(uniform|instance|varying|var|vertex|fragment|in|out)>\s'
-syn match ditherType       '\v<(texture|texture2D)>\s'
+"syn match ditherKeyword    '\v<(uniform|instance|varying|var|vertex|fragment|in|out)>\s'
+"syn match ditherType       '\v<(texture|texture2D)>\s'
 syn match ditherType       '\v<bool[234]?>'
 syn match ditherType       '\v<int[234]?>'
 syn match ditherType       '\v<uint[234]?>'
@@ -64,7 +61,7 @@ syn match ditherType       '\v<float([234](x[234])?)?>'
 syn match ditherType       '\v<[dbui]?vec[234]>'
 syn match ditherType       '\v<vec[234][dbfhui]?>'
 syn match ditherType       '\v<mat[234](x[234]f)?>'
-syn match ditherType       '\v<(vec|mat|list)\ze\['
+"syn match ditherType       '\v<(vec|mat|list|dict|tup)\ze\['
 
 
 "hi def ditherSymbol ctermfg=DarkGray guifg=DarkGray
@@ -95,7 +92,7 @@ syn match  ditherCharacter        "'[^\\]'"
 
 "syn region    ditherString      matchgroup=ditherString start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=ditherEscape,@Spell
 syn region    ditherString      matchgroup=ditherString start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=@Spell
-syn region    ditherString      matchgroup=ditherString start=+`+ skip=+\\\\\|\\`+ end=+`+ contains=@Spell
+"syn region    ditherString      matchgroup=ditherString start=+`+ skip=+\\\\\|\\`+ end=+`+ contains=@Spell
 
 syn match ditherNumber "\v<0[xX][0-9a-fA-F_]+([iuIU]?[lL]?[0-9]{-,3})?>"
 syn match ditherNumber "\v<0[bB][01_]+([iuIU]?[lL]?[0-9]{-,3})?>"
@@ -154,7 +151,7 @@ hi def link ditherPanic                 Exception
 
 syn match   ditherTypedef  contains=ditherTypedef "\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*" display contained
 syn match   ditherFunc     "\%(r#\)\=\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*" display contained
-syn keyword ditherKeyword union struct enum typedef nextgroup=ditherTypedef skipwhite skipempty
+syn keyword ditherKeyword union enum typedef namespace nextgroup=ditherTypedef skipwhite skipempty
 syn keyword ditherKeyword union nextgroup=ditherType skipwhite skipempty contained
 syn keyword ditherMacro platform macro nextgroup=ditherTypedef skipwhite skipempty
 " adapted from neovim runtime/syntax
