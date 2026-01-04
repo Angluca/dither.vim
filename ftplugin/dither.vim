@@ -27,6 +27,10 @@ if get(g:, 'dither_recommended_style', 1)
   setlocal tabstop=4
   setlocal textwidth=80
   let b:undo_ftplugin .= ' et< sts< sw< ts< tw<'
+
+  let s:root = expand('<sfile>:p:h:h')
+  execute 'setl tags+=' .. s:root .. '/tags/dither.tags'
+  execute 'setl dict+=' .. s:root .. '/tags/dither.dict'
 endif
 
 fu! DeleteTrailingWS()

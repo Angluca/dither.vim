@@ -1,0 +1,389 @@
+AXIS_X	$DITHER_ROOT/std/rdr/header.dh	/^  AXIS_X := {1.,0.,0.};$/;"	v
+AXIS_Y	$DITHER_ROOT/std/rdr/header.dh	/^  AXIS_Y := {0.,1.,0.};$/;"	v
+AXIS_Z	$DITHER_ROOT/std/rdr/header.dh	/^  AXIS_Z := {0.,0.,1.};$/;"	v
+BY_COUNT	$DITHER_ROOT/std/geom/header.dh	/^  BY_COUNT := 0;$/;"	v
+BY_SPACING	$DITHER_ROOT/std/geom/header.dh	/^  BY_SPACING := 1;$/;"	v
+CONTEXT_2D	$DITHER_ROOT/std/win/header.dh	/^  CONTEXT_2D     := 1;$/;"	v
+CONTEXT_3D	$DITHER_ROOT/std/win/header.dh	/^  CONTEXT_3D     := 2;$/;"	v
+CULL_FRUSTUM	$DITHER_ROOT/std/rdr/header.dh	/^  CULL_FRUSTUM   := 16;$/;"	v
+Camera	$DITHER_ROOT/std/rdr/header.dh	/^  typedef Camera = {$/;"	t
+DIRTY_BOUNDS	$DITHER_ROOT/std/rdr/header.dh	/^  DIRTY_BOUNDS   := 32$/;"	v
+DIRTY_COLORS	$DITHER_ROOT/std/rdr/header.dh	/^  DIRTY_COLORS   := 4$/;"	v
+DIRTY_INDICES	$DITHER_ROOT/std/rdr/header.dh	/^  DIRTY_INDICES  := 2$/;"	v
+DIRTY_NORMALS	$DITHER_ROOT/std/rdr/header.dh	/^  DIRTY_NORMALS  := 16$/;"	v
+DIRTY_UVS	$DITHER_ROOT/std/rdr/header.dh	/^  DIRTY_UVS      := 8$/;"	v
+DIRTY_VERTICES	$DITHER_ROOT/std/rdr/header.dh	/^  DIRTY_VERTICES := 1$/;"	v
+EFFECT_MIRROR	$DITHER_ROOT/std/vin/header.dh	/^  EFFECT_MIRROR := 64;$/;"	v
+Event	$DITHER_ROOT/std/win/header.dh	/^  typedef Event = {$/;"	t
+FEAT_HIST	$DITHER_ROOT/std/font/header.dh	/^  FEAT_HIST : u32 = 4$/;"	v
+FEAT_KERN	$DITHER_ROOT/std/font/header.dh	/^  FEAT_KERN : u32 = 65536$/;"	v
+FEAT_LIGA	$DITHER_ROOT/std/font/header.dh	/^  FEAT_LIGA : u32 = 256$/;"	v
+FEAT_NONE	$DITHER_ROOT/std/font/header.dh	/^  FEAT_NONE : u32 = 0$/;"	v
+FEAT_ONUM	$DITHER_ROOT/std/font/header.dh	/^  FEAT_ONUM : u32 = 2$/;"	v
+FEAT_SMCP	$DITHER_ROOT/std/font/header.dh	/^  FEAT_SMCP : u32 = 1$/;"	v
+FILTER_LINEAR	$DITHER_ROOT/std/frag/header.dh	/^  FILTER_LINEAR  := 1;$/;"	v
+FILTER_MIPMAP	$DITHER_ROOT/std/frag/header.dh	/^  FILTER_MIPMAP  := 2;$/;"	v
+FILTER_NEAREST	$DITHER_ROOT/std/frag/header.dh	/^  FILTER_NEAREST := 0;$/;"	v
+Font	$DITHER_ROOT/std/font/header.dh	/^  typedef Font = {$/;"	t
+GLenum	$DITHER_ROOT/std/win/platform/wgl_patcher.h	/^typedef GLenum (APIENTRYP PFNGLCHECKFRAMEBUFFERSTATUSPROC)(GLenum);$/;"	t
+GLint	$DITHER_ROOT/std/win/platform/wgl_patcher.h	/^typedef GLint (APIENTRYP PFNGLGETUNIFORMLOCATIONPROC)(GLuint, const GLchar*);$/;"	t
+GLuint	$DITHER_ROOT/std/win/platform/wgl_patcher.h	/^typedef GLuint (APIENTRYP PFNGLCREATESHADERPROC)(GLenum);$/;"	t
+Graphics	$DITHER_ROOT/std/drw/header.dh	/^  typedef Graphics = {$/;"	t
+H1_SANS	$DITHER_ROOT/std/font/header.dh	/^  H1_SANS     :=1$/;"	v
+H1_SANS_SM	$DITHER_ROOT/std/font/header.dh	/^  H1_SANS_SM  :=13$/;"	v
+H1_SCPT	$DITHER_ROOT/std/font/header.dh	/^  H1_SCPT     :=2$/;"	v
+H2_ITAL	$DITHER_ROOT/std/font/header.dh	/^  H2_ITAL     :=6$/;"	v
+H2_ITAL_SM	$DITHER_ROOT/std/font/header.dh	/^  H2_ITAL_SM  :=7$/;"	v
+H2_SANS	$DITHER_ROOT/std/font/header.dh	/^  H2_SANS     :=12$/;"	v
+H2_SCPT	$DITHER_ROOT/std/font/header.dh	/^  H2_SCPT     :=9$/;"	v
+H2_SRIF	$DITHER_ROOT/std/font/header.dh	/^  H2_SRIF     :=10$/;"	v
+H2_SRIF_SM	$DITHER_ROOT/std/font/header.dh	/^  H2_SRIF_SM  :=11$/;"	v
+H3_GOTH_DE	$DITHER_ROOT/std/font/header.dh	/^  H3_GOTH_DE  :=4$/;"	v
+H3_GOTH_EN	$DITHER_ROOT/std/font/header.dh	/^  H3_GOTH_EN  :=3$/;"	v
+H3_GOTH_IT	$DITHER_ROOT/std/font/header.dh	/^  H3_GOTH_IT  :=5$/;"	v
+H3_ITAL	$DITHER_ROOT/std/font/header.dh	/^  H3_ITAL     :=8$/;"	v
+H3_SRIF	$DITHER_ROOT/std/font/header.dh	/^  H3_SRIF     :=14$/;"	v
+IDLE	$DITHER_ROOT/std/win/header.dh	/^  IDLE           := 0;$/;"	v
+INF	$DITHER_ROOT/std/math/header.dh	/^  INF : f32 = 1.0\/0.0;$/;"	v
+JSON	$DITHER_ROOT/std/exch/header.dh	/^  typedef JSON = {$/;"	t
+KEY_DARR	$DITHER_ROOT/std/win/header.dh	/^  KEY_DARR  := 0xff54;$/;"	v
+KEY_F1	$DITHER_ROOT/std/win/header.dh	/^  KEY_F1    := 0xffbe;$/;"	v
+KEY_F10	$DITHER_ROOT/std/win/header.dh	/^  KEY_F10   := 0xffc7;$/;"	v
+KEY_F11	$DITHER_ROOT/std/win/header.dh	/^  KEY_F11   := 0xffc8;$/;"	v
+KEY_F12	$DITHER_ROOT/std/win/header.dh	/^  KEY_F12   := 0xffc9;$/;"	v
+KEY_F2	$DITHER_ROOT/std/win/header.dh	/^  KEY_F2    := 0xffbf;$/;"	v
+KEY_F3	$DITHER_ROOT/std/win/header.dh	/^  KEY_F3    := 0xffc0;$/;"	v
+KEY_F4	$DITHER_ROOT/std/win/header.dh	/^  KEY_F4    := 0xffc1;$/;"	v
+KEY_F5	$DITHER_ROOT/std/win/header.dh	/^  KEY_F5    := 0xffc2;$/;"	v
+KEY_F6	$DITHER_ROOT/std/win/header.dh	/^  KEY_F6    := 0xffc3;$/;"	v
+KEY_F7	$DITHER_ROOT/std/win/header.dh	/^  KEY_F7    := 0xffc4;$/;"	v
+KEY_F8	$DITHER_ROOT/std/win/header.dh	/^  KEY_F8    := 0xffc5;$/;"	v
+KEY_F9	$DITHER_ROOT/std/win/header.dh	/^  KEY_F9    := 0xffc6;$/;"	v
+KEY_LALT	$DITHER_ROOT/std/win/header.dh	/^  KEY_LALT  := 0xffe9;$/;"	v
+KEY_LARR	$DITHER_ROOT/std/win/header.dh	/^  KEY_LARR  := 0xff51;$/;"	v
+KEY_LCTRL	$DITHER_ROOT/std/win/header.dh	/^  KEY_LCTRL := 0xffe3;$/;"	v
+KEY_LSHIFT	$DITHER_ROOT/std/win/header.dh	/^  KEY_LSHIFT:= 0xffe1;$/;"	v
+KEY_PRESSED	$DITHER_ROOT/std/win/header.dh	/^  KEY_PRESSED    := 4;$/;"	v
+KEY_RALT	$DITHER_ROOT/std/win/header.dh	/^  KEY_RALT  := 0xffea;$/;"	v
+KEY_RARR	$DITHER_ROOT/std/win/header.dh	/^  KEY_RARR  := 0xff53;$/;"	v
+KEY_RCTRL	$DITHER_ROOT/std/win/header.dh	/^  KEY_RCTRL := 0xffe4;$/;"	v
+KEY_RELEASED	$DITHER_ROOT/std/win/header.dh	/^  KEY_RELEASED   := 5;$/;"	v
+KEY_RSHIFT	$DITHER_ROOT/std/win/header.dh	/^  KEY_RSHIFT:= 0xffe2;$/;"	v
+KEY_UARR	$DITHER_ROOT/std/win/header.dh	/^  KEY_UARR  := 0xff52;$/;"	v
+LEADING	$DITHER_ROOT/std/str/header.dh	/^  LEADING  : i32 = 1;$/;"	v
+LHS_LINE	$DITHER_ROOT/std/geom/header.dh	/^  LHS_LINE := 0;$/;"	v
+LHS_RAY	$DITHER_ROOT/std/geom/header.dh	/^  LHS_RAY := 1;$/;"	v
+LHS_SEGMENT	$DITHER_ROOT/std/geom/header.dh	/^  LHS_SEGMENT := 3;$/;"	v
+MODE_ALIGNED	$DITHER_ROOT/std/geom/header.dh	/^  MODE_ALIGNED  := 0;$/;"	v
+MODE_LINE_LIST	$DITHER_ROOT/std/rdr/header.dh	/^  MODE_LINE_LIST :=0x0001;$/;"	v
+MODE_LINE_STRIP	$DITHER_ROOT/std/rdr/header.dh	/^  MODE_LINE_STRIP:=0x0003;$/;"	v
+MODE_ORIENTED	$DITHER_ROOT/std/geom/header.dh	/^  MODE_ORIENTED :=16;$/;"	v
+MODE_POINT_LIST	$DITHER_ROOT/std/rdr/header.dh	/^  MODE_POINT_LIST:=0x0000;$/;"	v
+MODE_POLYGON	$DITHER_ROOT/std/geom/header.dh	/^  MODE_POLYGON  :=128;$/;"	v
+MODE_POLYLINE	$DITHER_ROOT/std/geom/header.dh	/^  MODE_POLYLINE :=  0;$/;"	v
+MODE_TRIG_LIST	$DITHER_ROOT/std/rdr/header.dh	/^  MODE_TRIG_LIST :=0x0004;$/;"	v
+MODE_TRIG_STRIP	$DITHER_ROOT/std/rdr/header.dh	/^  MODE_TRIG_STRIP:=0x0005;$/;"	v
+MOUSE_LEFT	$DITHER_ROOT/std/win/header.dh	/^  MOUSE_LEFT     := 1;$/;"	v
+MOUSE_MOVED	$DITHER_ROOT/std/win/header.dh	/^  MOUSE_MOVED    := 3;$/;"	v
+MOUSE_PRESSED	$DITHER_ROOT/std/win/header.dh	/^  MOUSE_PRESSED  := 1;$/;"	v
+MOUSE_RELEASED	$DITHER_ROOT/std/win/header.dh	/^  MOUSE_RELEASED := 2;$/;"	v
+MOUSE_RIGHT	$DITHER_ROOT/std/win/header.dh	/^  MOUSE_RIGHT    := 2;$/;"	v
+Mesh	$DITHER_ROOT/std/rdr/header.dh	/^  typedef Mesh = {$/;"	t
+OP_EXCLUDE	$DITHER_ROOT/std/geom/header.dh	/^  OP_EXCLUDE := 2;$/;"	v
+OP_INCLUDE	$DITHER_ROOT/std/geom/header.dh	/^  OP_INCLUDE := 1;$/;"	v
+ORD_CUBIC	$DITHER_ROOT/std/geom/header.dh	/^  ORD_CUBIC     := 3;$/;"	v
+ORD_QUADRATIC	$DITHER_ROOT/std/geom/header.dh	/^  ORD_QUADRATIC := 2;$/;"	v
+PI	$DITHER_ROOT/std/math/header.dh	/^  PI : f32 = 3.141592653589793;$/;"	v
+RESO_FHD	$DITHER_ROOT/std/vin/header.dh	/^  RESO_FHD := 32;$/;"	v
+RESO_HD	$DITHER_ROOT/std/vin/header.dh	/^  RESO_HD  := 16;$/;"	v
+RESO_VGA	$DITHER_ROOT/std/vin/header.dh	/^  RESO_VGA := 8;$/;"	v
+RET_PARAMS	$DITHER_ROOT/std/geom/header.dh	/^  RET_PARAMS := 16;$/;"	v
+RET_POINTS	$DITHER_ROOT/std/geom/header.dh	/^  RET_POINTS := 0;$/;"	v
+RHS_LINE	$DITHER_ROOT/std/geom/header.dh	/^  RHS_LINE := 0;$/;"	v
+RHS_RAY	$DITHER_ROOT/std/geom/header.dh	/^  RHS_RAY := 4;$/;"	v
+RHS_SEGMENT	$DITHER_ROOT/std/geom/header.dh	/^  RHS_SEGMENT := 12;$/;"	v
+Request	$DITHER_ROOT/std/req/header.dh	/^  typedef Request = {$/;"	t
+Response	$DITHER_ROOT/std/req/header.dh	/^  typedef Response = {$/;"	t
+SOURCE_FILE	$DITHER_ROOT/std/vin/header.dh	/^  SOURCE_FILE   := 2;$/;"	v
+SOURCE_WEBCAM	$DITHER_ROOT/std/vin/header.dh	/^  SOURCE_WEBCAM := 1;$/;"	v
+TRAILING	$DITHER_ROOT/std/str/header.dh	/^  TRAILING : i32 = 2;$/;"	v
+TYPE_BEZIER	$DITHER_ROOT/std/geom/header.dh	/^  TYPE_BEZIER  := 16;$/;"	v
+TYPE_BSPLINE	$DITHER_ROOT/std/geom/header.dh	/^  TYPE_BSPLINE := 48;$/;"	v
+TYPE_CATROM	$DITHER_ROOT/std/geom/header.dh	/^  TYPE_CATROM  := 32;$/;"	v
+Texture	$DITHER_ROOT/std/frag/header.dh	/^  typedef Texture = {$/;"	t
+Video	$DITHER_ROOT/std/vin/header.dh	/^  typedef Video = {$/;"	t
+WHEEL_SCROLLED	$DITHER_ROOT/std/win/header.dh	/^  WHEEL_SCROLLED := 6;$/;"	v
+WRAP_CLAMP	$DITHER_ROOT/std/frag/header.dh	/^  WRAP_CLAMP     := 4;$/;"	v
+WRAP_REPEAT	$DITHER_ROOT/std/frag/header.dh	/^  WRAP_REPEAT    := 0;$/;"	v
+_advance	$DITHER_ROOT/std/font/header.dh	/^  func _advance(id:i32,gidx:i32,hidx:i32,flag:u32):f32;$/;"	f
+_begin	$DITHER_ROOT/std/frag/header.dh	/^  func _begin(prgm:i32,fbo:i32);$/;"	f
+_begin_fbo	$DITHER_ROOT/std/drw/header.dh	/^  func _begin_fbo(fbo:i32);$/;"	f
+_camera_begin	$DITHER_ROOT/std/rdr/header.dh	/^  func _camera_begin(view:vec[f32,4,4],proj:vec[f32,4,4]);$/;"	f
+_camera_end	$DITHER_ROOT/std/rdr/header.dh	/^  func _camera_end();$/;"	f
+_draw_instances	$DITHER_ROOT/std/rdr/header.dh	/^  func _draw_instances(vao:i32,mode:i32,transforms:list[vec[f32,4,4]]);$/;"	f
+_draw_mesh	$DITHER_ROOT/std/rdr/header.dh	/^  func _draw_mesh(vao:i32,mode:i32,transform:vec[f32,4,4]);$/;"	f
+_draw_texture	$DITHER_ROOT/std/drw/header.dh	/^  func _draw_texture(tex:i32,x:f32,y:f32,w:f32,h:f32);$/;"	f
+_end_fbo	$DITHER_ROOT/std/drw/header.dh	/^  func _end_fbo();$/;"	f
+_flush	$DITHER_ROOT/std/drw/header.dh	/^  func _flush();$/;"	f
+_glyph	$DITHER_ROOT/std/font/header.dh	/^  func _glyph(id:i32,gidx:i32,reso:i32):list[list[vec[f32,2]]];$/;"	f
+_http	$DITHER_ROOT/std/req/header.dh	/^  func _http(rq:Request,re:Response);$/;"	f
+_init_graphics	$DITHER_ROOT/std/drw/header.dh	/^  func _init_graphics(pg:Graphics,w:i32,h:i32);$/;"	f
+_init_texture	$DITHER_ROOT/std/frag/header.dh	/^  func _init_texture(tex:Texture,w:i32,h:i32,flags:i32);$/;"	f
+_look_at	$DITHER_ROOT/std/rdr/header.dh	/^  func _look_at(eye:vec[f32,3],targ:vec[f32,3],up:vec[f32,3]):vec[f32,4,4];$/;"	f
+_lookup	$DITHER_ROOT/std/font/header.dh	/^  func _lookup[T](id:i32,x:T,flag:u32):i32;$/;"	f
+_ortho	$DITHER_ROOT/std/rdr/header.dh	/^  func _ortho(left:f32,right:f32,bottom:f32,top:f32,near:f32,far:f32):vec[f32,4,4];$/;"	f
+_perspective	$DITHER_ROOT/std/rdr/header.dh	/^  func _perspective(fov:f32,aspect:f32,near:f32,far:f32):vec[f32,4,4];$/;"	f
+_read_pixels	$DITHER_ROOT/std/drw/header.dh	/^  func _read_pixels(fbo:i32):arr[u8,3];$/;"	f
+_read_pixels	$DITHER_ROOT/std/frag/header.dh	/^  func _read_pixels(fbo:i32):arr[u8,3];$/;"	f
+_read_pixels	$DITHER_ROOT/std/vin/header.dh	/^  func _read_pixels(id:i32):arr[u8,3];$/;"	f
+_sample	$DITHER_ROOT/std/frag/header.dh	/^  func _sample(fbo:i32,uv:vec[f32,2]):vec[f32,4];$/;"	f
+_size	$DITHER_ROOT/std/drw/header.dh	/^  func _size(w:i32,h:i32,ctx:u64);$/;"	f
+_sort	$DITHER_ROOT/std/list/header.dh	/^  func _sort[T](a:list[T],keys:list[f32]);$/;"	f
+_update_mesh	$DITHER_ROOT/std/rdr/header.dh	/^  func _update_mesh(vao:i32,flags:i32,mode:i32,vertices:list[vec[f32,3]],indices:list[i32],color/;"	f
+_write_pixels	$DITHER_ROOT/std/drw/header.dh	/^  func _write_pixels(fbo:i32,pix:arr[u8,3]);$/;"	f
+_write_pixels	$DITHER_ROOT/std/frag/header.dh	/^  func _write_pixels(fbo:i32,pix:arr[u8,3]);$/;"	f
+abs	$DITHER_ROOT/std/math/header.dh	/^  func abs[N](x:vec[f32,N]):vec[f32,N]{return x.map(abs);};$/;"	f
+acos	$DITHER_ROOT/std/math/header.dh	/^  func acos[N](x:vec[f32,N]):vec[f32,N]{return x.map(acos);};$/;"	f
+action	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                      action:(SEL)action$/;"	v
+advance	$DITHER_ROOT/std/font/header.dh	/^    func advance(gidx:i32,hidx:i32,flag:u32):f32{$/;"	f
+affixed	$DITHER_ROOT/std/str/header.dh	/^  func affixed(s:str,cs:str,end:i32);$/;"	f
+apply_matrix	$DITHER_ROOT/std/drw/header.dh	/^  func apply_matrix(x:vec[f32,3,3]);$/;"	f
+arr	$DITHER_ROOT/std/arr/header.dh	/^namespace arr {$/;"	t
+atan2	$DITHER_ROOT/std/math/header.dh	/^  func atan2[N](x:vec[f32,N],y:vec[f32,N]):vec[f32,N]{$/;"	f
+background	$DITHER_ROOT/std/drw/header.dh	/^  func background(r:f32,g:f32,b:f32,a:f32);$/;"	f
+background	$DITHER_ROOT/std/rdr/header.dh	/^  func background(r:f32,g:f32,b:f32,a:f32);$/;"	f
+backing	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                          backing:NSBackingStoreBuffered$/;"	v
+backing	$DITHER_ROOT/std/win/platform/window_coregraphics.m	/^                          backing:NSBackingStoreBuffered$/;"	v
+backing	$DITHER_ROOT/std/win/platform/window_glcocoa.m	/^                          backing:NSBackingStoreBuffered$/;"	v
+bbox	$DITHER_ROOT/std/geom/header.dh	/^  func bbox[N](ps:list[vec[f32,N]],flags:i32):tup[vec[f32,N],vec[f32,N],vec[f32,N,N]];$/;"	f
+begin	$DITHER_ROOT/std/drw/header.dh	/^    func begin() {_begin_fbo(this.fbo);};$/;"	f
+begin	$DITHER_ROOT/std/frag/header.dh	/^  func begin(prgm:i32,tex:Texture){_begin(prgm,tex.fbo)}$/;"	f
+begin	$DITHER_ROOT/std/rdr/header.dh	/^    func begin(){_camera_begin(.view,.proj);}$/;"	f
+begin_shape	$DITHER_ROOT/std/drw/header.dh	/^  func begin_shape();$/;"	f
+body	$DITHER_ROOT/std/req/header.dh	/^    body:=list[u8]{};$/;"	v
+buffer_full	$DITHER_ROOT/std/snd/header.dh	/^  func buffer_full():i32;$/;"	f
+ceil	$DITHER_ROOT/std/math/header.dh	/^  func ceil[N](x:vec[f32,N]):vec[f32,N]{return x.map(ceil);};$/;"	f
+char	$DITHER_ROOT/std/win/platform/wgl_patcher.h	/^typedef char GLchar;$/;"	t
+checked	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                                       checked:b$/;"	v
+chr	$DITHER_ROOT/std/str/header.dh	/^  func chr(i:u32) : str;$/;"	f
+circle	$DITHER_ROOT/std/drw/header.dh	/^  func circle(x:f32,y:f32,d:f32){ellipse(x,y,d,d);};$/;"	f
+clamp	$DITHER_ROOT/std/math/header.dh	/^  func clamp[T](x:T, a:T, b:T):T{$/;"	f
+clear	$DITHER_ROOT/std/dict/header.dh	/^  func clear[T,U](a:dict[T,U]);$/;"	f
+clip	$DITHER_ROOT/std/geom/header.dh	/^  func clip(pline:list[vec[f32,2]],region:list[vec[f32,2]],flags:i32):list[list[vec[f32,2]]];$/;"	f
+colors	$DITHER_ROOT/std/rdr/header.dh	/^    colors:=list[vec[f32,4]]{};$/;"	v
+convex_hull	$DITHER_ROOT/std/geom/header.dh	/^  func convex_hull(poly:list[vec[f32,2]]):list[vec[f32,2]];$/;"	f
+cos	$DITHER_ROOT/std/math/header.dh	/^  func cos[N](x:vec[f32,N]):vec[f32,N]{return x.map(cos);};$/;"	f
+create	$DITHER_ROOT/std/vin/header.dh	/^  func create(flag:i32,path:str):Video;$/;"	f
+create_graphics	$DITHER_ROOT/std/drw/header.dh	/^  func create_graphics(w:i32,h:i32):Graphics{pg:=Graphics{};_init_graphics(pg,w,h);return pg;};$/;"	f
+cross	$DITHER_ROOT/std/vec/header.dh	/^  func cross(v:vec[f32,3],u:vec[f32,3]):vec[f32,3]{$/;"	f
+curve	$DITHER_ROOT/std/geom/header.dh	/^  func curve[N](ps:list[vec[f32,N]],params:list[f32],t:f32,flags:i32):vec[f32,N];$/;"	f
+data	$DITHER_ROOT/std/exch/header.dh	/^    data : union[list[JSON],dict[str,JSON],str,f32]$/;"	v
+decode	$DITHER_ROOT/std/exch/header.dh	/^  func decode[T=JSON](src:str):T{$/;"	f
+decode	$DITHER_ROOT/std/font/header.dh	/^  func decode(hfset:i32):Font;$/;"	f
+decode	$DITHER_ROOT/std/img/header.dh	/^  func decode(buf:list[u8]):arr[u8,3];$/;"	f
+decode	$DITHER_ROOT/std/str/header.dh	/^  func decode(btyes:list[u8],encoding:str):str;$/;"	f
+default	$DITHER_ROOT/std/win/platform/window_coregraphics.m	/^    default: return key;$/;"	v
+default	$DITHER_ROOT/std/win/platform/window_glcocoa.m	/^    default: return key;$/;"	v
+defer	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                            defer:NO];$/;"	v
+defer	$DITHER_ROOT/std/win/platform/window_coregraphics.m	/^                          defer:NO];$/;"	v
+defer	$DITHER_ROOT/std/win/platform/window_glcocoa.m	/^                          defer:NO];$/;"	v
+delaunay	$DITHER_ROOT/std/geom/header.dh	/^  func delaunay(ps:list[vec[f32,2]]):list[i32];$/;"	f
+delay	$DITHER_ROOT/std/time/header.dh	/^  func delay(ms:f32);$/;"	f
+delete	$DITHER_ROOT/std/dict/header.dh	/^  func delete[T,U](a:dict[T,U],x:T);$/;"	f
+dequeue	$DITHER_ROOT/std/gui/impl_cocoa.m	/^        dequeue:YES])) {$/;"	v
+dequeue	$DITHER_ROOT/std/win/platform/window_coregraphics.m	/^                      dequeue:YES])) {$/;"	v
+dequeue	$DITHER_ROOT/std/win/platform/window_glcocoa.m	/^                      dequeue:YES])) {$/;"	v
+dict	$DITHER_ROOT/std/dict/header.dh	/^namespace dict {$/;"	t
+didOutputSampleBuffer	$DITHER_ROOT/std/vin/impl_avfoundation.m	/^        didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer$/;"	v
+dir	$DITHER_ROOT/std/vec/header.dh	/^  func dir[N](v:vec[f32,N]) : vec[f32,N];$/;"	f
+dot	$DITHER_ROOT/std/vec/header.dh	/^  func dot[N](v:vec[f32,N],u:vec[f32,N]) : f32;$/;"	f
+draw	$DITHER_ROOT/std/drw/header.dh	/^    func draw(x:f32,y:f32,w:f32,h:f32)  {_draw_texture(this.fbo,x,y,w,h);};$/;"	f
+draw	$DITHER_ROOT/std/rdr/header.dh	/^    func draw(transforms:list[vec[f32,4,4]]){if (.vao==-1){.update(0xff);};_draw_instances(.vao,/;"	f
+drw	$DITHER_ROOT/std/drw/header.dh	/^namespace drw {$/;"	t
+ellipse	$DITHER_ROOT/std/drw/header.dh	/^  func ellipse(x:f32,y:f32,w:f32,h:f32);$/;"	f
+encode	$DITHER_ROOT/std/exch/header.dh	/^  func encode(obj:JSON):str{return _encode_json(obj);}$/;"	f
+encode	$DITHER_ROOT/std/img/header.dh	/^  func encode(ext:str,pix:arr[u8,3]):list[u8];$/;"	f
+encode	$DITHER_ROOT/std/str/header.dh	/^  func encode(s:str,encoding:str):list[u8];$/;"	f
+end	$DITHER_ROOT/std/drw/header.dh	/^    func end()   {  _end_fbo();};$/;"	f
+end	$DITHER_ROOT/std/frag/header.dh	/^  func end();$/;"	f
+end	$DITHER_ROOT/std/rdr/header.dh	/^    func end(){_camera_end();};$/;"	f
+end_shape	$DITHER_ROOT/std/drw/header.dh	/^  func end_shape(close:i32);$/;"	f
+erase	$DITHER_ROOT/std/list/header.dh	/^  func erase[T](a:list[T],i:i32,j:i32) : i32;$/;"	f
+exch	$DITHER_ROOT/std/exch/header.dh	/^namespace exch {$/;"	t
+exit	$DITHER_ROOT/std/snd/header.dh	/^  func exit();$/;"	f
+exit	$DITHER_ROOT/std/win/header.dh	/^  func exit();$/;"	f
+exp	$DITHER_ROOT/std/math/header.dh	/^  func exp[N](x:vec[f32,N]):vec[f32,N]{return x.map(exp);};$/;"	f
+fbo	$DITHER_ROOT/std/drw/header.dh	/^    fbo  : i32;$/;"	v
+fbo	$DITHER_ROOT/std/frag/header.dh	/^    fbo: i32;$/;"	v
+field	$DITHER_ROOT/std/gui/header.dh	/^  func field(name:str,x:str);$/;"	f
+fill	$DITHER_ROOT/std/drw/header.dh	/^  func fill(r:f32,g:f32,b:f32,a:f32);$/;"	f
+filter	$DITHER_ROOT/std/list/header.dh	/^  func filter[T](a:list[T],f:func[tup[T],i32]):list[T]{$/;"	f
+floor	$DITHER_ROOT/std/math/header.dh	/^  func floor[N](x:vec[f32,N]):vec[f32,N]{return x.map(floor);};$/;"	f
+flush	$DITHER_ROOT/std/rdr/header.dh	/^  func flush();$/;"	f
+font	$DITHER_ROOT/std/font/header.dh	/^namespace font {$/;"	t
+fps	$DITHER_ROOT/std/time/header.dh	/^  func fps(trg:f32):f32;$/;"	f
+frag	$DITHER_ROOT/std/frag/header.dh	/^namespace frag {$/;"	t
+fromConnection	$DITHER_ROOT/std/vin/impl_avfoundation.m	/^        fromConnection:(AVCaptureConnection *)connection{$/;"	v
+gc	$DITHER_ROOT/std/guts/header.dh	/^  func gc();$/;"	f
+gc_off	$DITHER_ROOT/std/guts/header.dh	/^  func gc_off();$/;"	f
+gc_on	$DITHER_ROOT/std/guts/header.dh	/^  func gc_on();$/;"	f
+geom	$DITHER_ROOT/std/geom/header.dh	/^namespace geom {$/;"	t
+get	$DITHER_ROOT/std/gui/header.dh	/^  func get[T](name:str):T;$/;"	f
+get	$DITHER_ROOT/std/img/header.dh	/^  func get[T](pix:arr[T,3],x:i32,y:i32):vec[T,4]{$/;"	f
+glyph	$DITHER_ROOT/std/font/header.dh	/^    func glyph(gidx:i32,reso:i32):list[list[vec[f32,2]]]{$/;"	f
+gui	$DITHER_ROOT/std/gui/header.dh	/^namespace gui {$/;"	t
+guts	$DITHER_ROOT/std/guts/header.dh	/^namespace guts {$/;"	t
+has	$DITHER_ROOT/std/dict/header.dh	/^  func has[T,U](a:dict[T,U],x:T):i32;$/;"	f
+headers	$DITHER_ROOT/std/req/header.dh	/^    headers:=list[str]{};$/;"	v
+http	$DITHER_ROOT/std/req/header.dh	/^  func http(rq:Request):Response{$/;"	f
+hypot	$DITHER_ROOT/std/math/header.dh	/^  func hypot[N](x:vec[f32,N],y:vec[f32,N]):vec[f32,N]{$/;"	f
+id	$DITHER_ROOT/std/font/header.dh	/^    id : i32;$/;"	v
+id	$DITHER_ROOT/std/rdr/header.dh	/^    id := {1.,0.,0.,0.; 0.,1.,0.,0.; 0.,0.,1.,0.; 0.,0.,0.,1.};$/;"	v
+id	$DITHER_ROOT/std/vin/header.dh	/^    id : i32;$/;"	v
+img	$DITHER_ROOT/std/img/header.dh	/^namespace img {$/;"	t
+inMode	$DITHER_ROOT/std/gui/impl_cocoa.m	/^        inMode:NSDefaultRunLoopMode$/;"	v
+inMode	$DITHER_ROOT/std/win/platform/window_coregraphics.m	/^                      inMode:NSDefaultRunLoopMode$/;"	v
+inMode	$DITHER_ROOT/std/win/platform/window_glcocoa.m	/^                      inMode:NSDefaultRunLoopMode$/;"	v
+indices	$DITHER_ROOT/std/rdr/header.dh	/^    indices:=list[i32]{};$/;"	v
+init	$DITHER_ROOT/std/frag/header.dh	/^  func init(ctx:u64);$/;"	f
+init	$DITHER_ROOT/std/gui/header.dh	/^  func init();$/;"	f
+init	$DITHER_ROOT/std/rdr/header.dh	/^  func init(ctx:u64);$/;"	f
+init	$DITHER_ROOT/std/snd/header.dh	/^  func init(rate:i32,chan:i32);$/;"	f
+init	$DITHER_ROOT/std/win/header.dh	/^  func init(w:i32,h:i32,flags:i32):u64;$/;"	f
+initWithContentRect	$DITHER_ROOT/std/gui/impl_cocoa.m	/^              initWithContentRect:frame$/;"	v
+insert	$DITHER_ROOT/std/list/header.dh	/^  func insert[T](a:list[T],i:i32,x:T) : i32;$/;"	f
+io	$DITHER_ROOT/std/io/header.dh	/^namespace io {$/;"	t
+join	$DITHER_ROOT/std/str/header.dh	/^  func join(s:str,ss:list[str]):str;$/;"	f
+key	$DITHER_ROOT/std/win/header.dh	/^    key  : i32;$/;"	v
+keys	$DITHER_ROOT/std/dict/header.dh	/^  func keys[T,U](a:dict[T,U]):list[T];$/;"	f
+length	$DITHER_ROOT/std/dict/header.dh	/^  func length[T,U](a:dict[T,U]):i32;$/;"	f
+length	$DITHER_ROOT/std/list/header.dh	/^  func length[T](a:list[T]): i32;$/;"	f
+length	$DITHER_ROOT/std/str/header.dh	/^  func length(s:str): i32;$/;"	f
+lerp	$DITHER_ROOT/std/math/header.dh	/^  func lerp[T](x:T,y:T,t:f32):T{$/;"	f
+line	$DITHER_ROOT/std/drw/header.dh	/^  func line(x0:f32,y0:f32,x1:f32,y1:f32);$/;"	f
+line_intersect	$DITHER_ROOT/std/geom/header.dh	/^  func line_intersect[N](p0:vec[f32,N],p1:vec[f32,N],q0:vec[f32,N],q1:vec[f32,N],flags:i32):tup[/;"	f
+linmap	$DITHER_ROOT/std/math/header.dh	/^  func linmap[T](x:T, ilo:T, ihi:T, olo:T, ohi:T):T{$/;"	f
+list	$DITHER_ROOT/std/list/header.dh	/^namespace list {$/;"	t
+local	$DITHER_ROOT/std/time/header.dh	/^  func local(stmp:f64):tup[i32,i32,i32,i32,i32,i32];$/;"	f
+look_at	$DITHER_ROOT/std/rdr/header.dh	/^    func look_at(eye:vec[f32,3],targ:vec[f32,3],up:vec[f32,3]){.view=_look_at(eye,targ,up);}$/;"	f
+lookup	$DITHER_ROOT/std/font/header.dh	/^    func lookup(lig:list[i32],flag:u32):i32{$/;"	f
+mag	$DITHER_ROOT/std/vec/header.dh	/^  func mag[N](v:vec[f32,N]) : f32;$/;"	f
+make	$DITHER_ROOT/std/arr/header.dh	/^  func make[T,U](n:vec[i32,U],a:T):arr[T,U];$/;"	f
+make	$DITHER_ROOT/std/list/header.dh	/^  func make[T](n:i32,a:T): list[T];$/;"	f
+map	$DITHER_ROOT/std/list/header.dh	/^  func map[T,U](a:list[T],f:func[tup[T],U]):list[U]{$/;"	f
+mat	$DITHER_ROOT/std/rdr/header.dh	/^  namespace mat{$/;"	t
+math	$DITHER_ROOT/std/math/header.dh	/^namespace math {$/;"	t
+max	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                         max:(NSInteger)max$/;"	v
+max	$DITHER_ROOT/std/math/header.dh	/^  func max[N](x:vec[f32,N],y:vec[f32,N]):vec[f32,N]{$/;"	f
+maxValue	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                                maxValue:max$/;"	v
+method	$DITHER_ROOT/std/req/header.dh	/^    method:="GET";$/;"	v
+millis	$DITHER_ROOT/std/time/header.dh	/^  func millis():f64;$/;"	f
+min	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                         min:(NSInteger)min$/;"	v
+min	$DITHER_ROOT/std/math/header.dh	/^  func min[N](x:vec[f32,N],y:vec[f32,N]):vec[f32,N]{$/;"	f
+minValue	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                                minValue:min$/;"	v
+mode	$DITHER_ROOT/std/rdr/header.dh	/^    mode:=MODE_TRIG_LIST;$/;"	v
+next_contour	$DITHER_ROOT/std/drw/header.dh	/^  func next_contour(close:i32);$/;"	f
+no_fill	$DITHER_ROOT/std/drw/header.dh	/^  func no_fill();$/;"	f
+no_stroke	$DITHER_ROOT/std/drw/header.dh	/^  func no_stroke();$/;"	f
+noise	$DITHER_ROOT/std/rand/header.dh	/^  func noise(x:f32,y:f32,z:f32):f32;$/;"	f
+noise_detail	$DITHER_ROOT/std/rand/header.dh	/^  func noise_detail(lod:i32,falloff:f32);$/;"	f
+noise_reseed	$DITHER_ROOT/std/rand/header.dh	/^  func noise_reseed();$/;"	f
+normals	$DITHER_ROOT/std/rdr/header.dh	/^    normals:=list[vec[f32,3]]{};$/;"	v
+ord	$DITHER_ROOT/std/str/header.dh	/^  func ord(s:str) : u32;$/;"	f
+ortho	$DITHER_ROOT/std/rdr/header.dh	/^    func ortho(left:f32,right:f32,bottom:f32,top:f32,near:f32,far:f32){.proj=_ortho(left,right,b/;"	f
+outputSettings	$DITHER_ROOT/std/vin/impl_avfoundation.m	/^                              outputSettings:settings];$/;"	v
+pad	$DITHER_ROOT/std/str/header.dh	/^  func pad(s:str,n:i32,cs:str,end:i32);$/;"	f
+perspective	$DITHER_ROOT/std/rdr/header.dh	/^    func perspective(fovy:f32,aspect:f32,near:f32,far:f32){.proj=_perspective(fovy,aspect,near,f/;"	f
+point	$DITHER_ROOT/std/drw/header.dh	/^  func point(x:f32,y:f32);$/;"	f
+poll	$DITHER_ROOT/std/drw/header.dh	/^  func poll():win.Event{_flush();return win.poll()};$/;"	f
+poll	$DITHER_ROOT/std/gui/header.dh	/^  func poll();$/;"	f
+poll	$DITHER_ROOT/std/win/header.dh	/^  func poll():Event;$/;"	f
+poly_resample	$DITHER_ROOT/std/geom/header.dh	/^  func poly_resample(poly:list[vec[f32,2]], n:f32, flags:i32):list[vec[f32,2]];$/;"	f
+poly_simplify	$DITHER_ROOT/std/geom/header.dh	/^  func poly_simplify(poly:list[vec[f32,2]],eps:f32):list[vec[f32,2]];$/;"	f
+pop	$DITHER_ROOT/std/list/header.dh	/^  func pop[T](a:list[T]) : T {$/;"	f
+pop_matrix	$DITHER_ROOT/std/drw/header.dh	/^  func pop_matrix();$/;"	f
+print	$DITHER_ROOT/std/io/header.dh	/^  func print(s:str);$/;"	f
+println	$DITHER_ROOT/std/io/header.dh	/^  func println(s:str);$/;"	f
+program	$DITHER_ROOT/std/frag/header.dh	/^  func program(src:str):i32;$/;"	f
+proj	$DITHER_ROOT/std/rdr/header.dh	/^    proj:={1.,0.,0.,0.; 0.,1.,0.,0.; 0.,0.,1.,0.; 0.,0.,0.,1.};$/;"	v
+pt_in_poly	$DITHER_ROOT/std/geom/header.dh	/^  func pt_in_poly(pt:vec[f32,2],poly:list[vec[f32,2]]):i32;$/;"	f
+ptrdiff_t	$DITHER_ROOT/std/win/platform/wgl_patcher.h	/^typedef ptrdiff_t GLsizeiptr;$/;"	t
+push	$DITHER_ROOT/std/list/header.dh	/^  func push[T](a:list[T],x:T) : i32 {$/;"	f
+push_matrix	$DITHER_ROOT/std/drw/header.dh	/^  func push_matrix();$/;"	f
+put_sample	$DITHER_ROOT/std/snd/header.dh	/^  func put_sample(x:f32);$/;"	f
+rand	$DITHER_ROOT/std/rand/header.dh	/^namespace rand {$/;"	t
+random	$DITHER_ROOT/std/math/header.dh	/^  func random():f32;$/;"	f
+random	$DITHER_ROOT/std/rand/header.dh	/^  func random[T](a:T,b:T):T{return a+random(b-a)};$/;"	f
+rdr	$DITHER_ROOT/std/rdr/header.dh	/^namespace rdr{$/;"	t
+re	$DITHER_ROOT/std/req/header.dh	/^    re := Response{};$/;"	v
+read_file	$DITHER_ROOT/std/io/header.dh	/^  func read_file(s:str):list[u8];$/;"	f
+read_pixels	$DITHER_ROOT/std/drw/header.dh	/^    func read_pixels():arr[u8,3]     {return _read_pixels(this.fbo)};$/;"	f
+read_pixels	$DITHER_ROOT/std/frag/header.dh	/^    func read_pixels():arr[u8,3]     {return _read_pixels(this.fbo)};$/;"	f
+read_pixels	$DITHER_ROOT/std/vin/header.dh	/^    func read_pixels():arr[u8,3]{return _read_pixels(this.id);};$/;"	f
+rect	$DITHER_ROOT/std/drw/header.dh	/^  func rect(x:f32,y:f32,w:f32,h:f32);$/;"	f
+render	$DITHER_ROOT/std/frag/header.dh	/^  func render();$/;"	f
+req	$DITHER_ROOT/std/req/header.dh	/^namespace req {$/;"	t
+reset_matrix	$DITHER_ROOT/std/drw/header.dh	/^  func reset_matrix();$/;"	f
+reshape	$DITHER_ROOT/std/arr/header.dh	/^  func reshape[T,U](a:arr[T,U],n:vec[i32,U]);$/;"	f
+rotate_deg	$DITHER_ROOT/std/drw/header.dh	/^  func rotate_deg(x:f32);$/;"	f
+rotate_deg	$DITHER_ROOT/std/rdr/header.dh	/^    func rotate_deg(axis:vec[f32,3],ang:f32):vec[f32,4,4];$/;"	f
+round	$DITHER_ROOT/std/math/header.dh	/^  func round[N](x:vec[f32,N]):vec[f32,N]{return x.map(round);};$/;"	f
+sample	$DITHER_ROOT/std/frag/header.dh	/^    func sample(uv:vec[f32,2]):vec[f32,4]{return _sample(this.fbo,uv);}$/;"	f
+scale	$DITHER_ROOT/std/drw/header.dh	/^  func scale(x:f32,y:f32);$/;"	f
+scale	$DITHER_ROOT/std/rdr/header.dh	/^    func scale(x:f32,y:f32,z:f32):vec[f32,4,4]{$/;"	f
+seed	$DITHER_ROOT/std/rand/header.dh	/^  func seed(x:u32);$/;"	f
+set	$DITHER_ROOT/std/gui/header.dh	/^  func set[T](name:str,x:T);$/;"	f
+set	$DITHER_ROOT/std/img/header.dh	/^  func set[T](pix:arr[T,3],x:i32,y:i32,c:vec[T,4]){$/;"	f
+shape	$DITHER_ROOT/std/arr/header.dh	/^  func shape[T,U](a:arr[T,U]):vec[i32,U];$/;"	f
+sin	$DITHER_ROOT/std/math/header.dh	/^  func sin[N](x:vec[f32,N]):vec[f32,N]{return x.map(sin);};$/;"	f
+size	$DITHER_ROOT/std/drw/header.dh	/^  func size(w:i32,h:i32){_size(w,h,win.init(w,h,win.CONTEXT_2D));}$/;"	f
+slice	$DITHER_ROOT/std/list/header.dh	/^  func slice[T](a:list[T],i:i32,j:i32) : list[T];$/;"	f
+slice	$DITHER_ROOT/std/str/header.dh	/^  func slice(s:str,i:i32,j:i32):str;$/;"	f
+slider	$DITHER_ROOT/std/gui/header.dh	/^  func slider[T,N](name:str,x:vec[T,N],l:vec[T,N],r:vec[T,N]);$/;"	f
+snd	$DITHER_ROOT/std/snd/header.dh	/^namespace snd {$/;"	t
+sort	$DITHER_ROOT/std/list/header.dh	/^  func sort[T](a:list[T],f:func[tup[T],f32]){$/;"	f
+split	$DITHER_ROOT/std/str/header.dh	/^  func split(s:str,delim:str):list[str];$/;"	f
+sqrt	$DITHER_ROOT/std/math/header.dh	/^  func sqrt[N](x:vec[f32,N]):vec[f32,N]{return x.map(sqrt);};$/;"	f
+stamp	$DITHER_ROOT/std/time/header.dh	/^  func stamp():f64;$/;"	f
+status	$DITHER_ROOT/std/req/header.dh	/^    status:i32;$/;"	v
+str	$DITHER_ROOT/std/str/header.dh	/^namespace str {$/;"	t
+stroke	$DITHER_ROOT/std/drw/header.dh	/^  func stroke(r:f32,g:f32,b:f32,a:f32);$/;"	f
+stroke_weight	$DITHER_ROOT/std/drw/header.dh	/^  func stroke_weight(w:f32);$/;"	f
+struct	$DITHER_ROOT/std/vin/impl_avfoundation.m	/^typedef struct vid_st {$/;"	t
+struct	$DITHER_ROOT/std/win/platform/windowing.h	/^typedef struct {$/;"	t
+styleMask	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                        styleMask:(NSWindowStyleMaskTitled | NSWindowStyleMaskHUDWindow | NSWind/;"	v
+styleMask	$DITHER_ROOT/std/win/platform/window_coregraphics.m	/^                          styleMask:style$/;"	v
+styleMask	$DITHER_ROOT/std/win/platform/window_glcocoa.m	/^                          styleMask:style$/;"	v
+tan	$DITHER_ROOT/std/math/header.dh	/^  func tan[N](x:vec[f32,N]):vec[f32,N]{return x.map(tan);};$/;"	f
+target	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                      target:(id)target$/;"	v
+text	$DITHER_ROOT/std/drw/header.dh	/^  func text(s:str,x:f32,y:f32);$/;"	f
+text	$DITHER_ROOT/std/rdr/header.dh	/^  func text(s:str,transform:vec[f32,4,4]);$/;"	f
+texture	$DITHER_ROOT/std/frag/header.dh	/^  func texture(w:i32,h:i32,flags:i32):Texture{tex:=Texture{};_init_texture(tex,w,h,flags);return/;"	f
+time	$DITHER_ROOT/std/time/header.dh	/^namespace time {$/;"	t
+toggle	$DITHER_ROOT/std/gui/header.dh	/^  func toggle(name:str,x:i32);$/;"	f
+translate	$DITHER_ROOT/std/drw/header.dh	/^  func translate(x:f32,y:f32);$/;"	f
+translate	$DITHER_ROOT/std/rdr/header.dh	/^    func translate(x:f32,y:f32,z:f32):vec[f32,4,4]{$/;"	f
+triangulate	$DITHER_ROOT/std/geom/header.dh	/^  func triangulate(poly:list[vec[f32,2]]):list[i32];$/;"	f
+trim	$DITHER_ROOT/std/str/header.dh	/^  func trim(s:str,cs:str,end:i32):str;$/;"	f
+type	$DITHER_ROOT/std/win/header.dh	/^    type : i32;$/;"	v
+uniform	$DITHER_ROOT/std/frag/header.dh	/^  func uniform[T](name:str, x:T);$/;"	f
+untilDate	$DITHER_ROOT/std/gui/impl_cocoa.m	/^        untilDate:nil$/;"	v
+untilDate	$DITHER_ROOT/std/win/platform/window_coregraphics.m	/^                      untilDate:nil$/;"	v
+untilDate	$DITHER_ROOT/std/win/platform/window_glcocoa.m	/^                      untilDate:nil$/;"	v
+update	$DITHER_ROOT/std/rdr/header.dh	/^    func update(flags:i32){.vao=_update_mesh(.vao,flags,.mode,.vertices,.indices,.colors,.uvs,.n/;"	f
+url	$DITHER_ROOT/std/req/header.dh	/^    url:="";$/;"	v
+uvs	$DITHER_ROOT/std/rdr/header.dh	/^    uvs:=list[vec[f32,2]]{};$/;"	v
+value	$DITHER_ROOT/std/gui/impl_cocoa.m	/^                       value:(NSString *)value$/;"	v
+values	$DITHER_ROOT/std/dict/header.dh	/^  func values[T,U](a:dict[T,U]):list[U];$/;"	f
+vao	$DITHER_ROOT/std/rdr/header.dh	/^    vao:=-1;$/;"	v
+vec	$DITHER_ROOT/std/vec/header.dh	/^namespace vec {$/;"	t
+vertex	$DITHER_ROOT/std/drw/header.dh	/^  func vertex(x:f32,y:f32);$/;"	f
+vertices	$DITHER_ROOT/std/rdr/header.dh	/^    vertices:=list[vec[f32,3]]{};$/;"	v
+view	$DITHER_ROOT/std/rdr/header.dh	/^    view:={1.,0.,0.,0.; 0.,1.,0.,0.; 0.,0.,1.,0.; 0.,0.,0.,1.};$/;"	v
+vin	$DITHER_ROOT/std/vin/header.dh	/^namespace vin {$/;"	t
+void	$DITHER_ROOT/std/win/platform/wgl_patcher.h	/^typedef void (APIENTRYP PFNGLVERTEXATTRIBPOINTERPROC)(GLuint, GLint, GLenum, GLboolean, GLsizei,/;"	t
+voronoi	$DITHER_ROOT/std/geom/header.dh	/^  func voronoi(ps:list[vec[f32,2]]):list[list[vec[f32,2]]];$/;"	f
+win	$DITHER_ROOT/std/win/header.dh	/^namespace win {$/;"	t
+write_file	$DITHER_ROOT/std/io/header.dh	/^  func write_file(s:str,buf:list[u8]);$/;"	f
+write_pixels	$DITHER_ROOT/std/drw/header.dh	/^    func write_pixels(pix:arr[u8,3]) {_write_pixels(this.fbo,pix)};$/;"	f
+write_pixels	$DITHER_ROOT/std/frag/header.dh	/^    func write_pixels(pix:arr[u8,3]) {_write_pixels(this.fbo,pix)};$/;"	f

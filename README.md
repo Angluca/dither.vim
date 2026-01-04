@@ -16,3 +16,5 @@ au filetype dither call LspAddServer([#{
             \  }])
 ```
 
+quickly run use `:make`
+
