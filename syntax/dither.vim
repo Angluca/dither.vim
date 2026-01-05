@@ -6,8 +6,8 @@ syn keyword ditherKeyword func embed
 syn keyword ditherKeyword def const static pub
 
 syn keyword ditherType bool char rchar byte void string ptrdiff untyped typed
-syn keyword ditherType i8 i16 i32 i64 u8 u16 u32 u64 isize usize size
-syn keyword ditherType int uint long ulong
+syn keyword ditherType i8 i16 i32 i64 u8 u16 u32 u64
+syn keyword ditherType int uint isize usize
 syn keyword ditherType float f32 f64
 syn keyword ditherType str list vec dict tup arr geom guts io math exch
 syn keyword ditherType drw frag time rand snd rdr req win vin img font
