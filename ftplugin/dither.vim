@@ -31,6 +31,7 @@ if get(g:, 'dither_recommended_style', 1)
   let s:root = expand('<sfile>:p:h:h')
   execute 'setl tags+=' .. s:root .. '/tags/dither.tags'
   execute 'setl dict+=' .. s:root .. '/tags/dither.dict'
+  execute 'setl dict+=' .. s:root .. '/tags/dither.base.dict'
 endif
 
 fu! DeleteTrailingWS()
