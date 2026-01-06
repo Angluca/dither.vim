@@ -9,8 +9,8 @@ syn keyword ditherType bool char rchar byte void string ptrdiff untyped typed
 syn keyword ditherType i8 i16 i32 i64 u8 u16 u32 u64
 syn keyword ditherType int uint isize usize
 syn keyword ditherType float f32 f64
-syn keyword ditherType str list vec dict tup arr geom guts io math exch
-syn keyword ditherType drw frag time rand snd rdr req win vin img font
+syn keyword ditherType arr dict drw exch font frag geom gui guts img io list math
+syn keyword ditherType rand rdr req snd str time vec vin win
 
 syn keyword ditherSelf self this
 syn keyword ditherLabel default ref as
