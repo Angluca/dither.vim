@@ -9,29 +9,29 @@ set cpo&vim
 compiler dither
 
 " Formatting
-setlocal formatoptions+=croql/ formatoptions-=t
+setl formatoptions+=croql/ formatoptions-=t
 
 " Miscellaneous settings
-setlocal comments=://
-setlocal commentstring=//\ %s
-setlocal iskeyword+=@-@
-setlocal suffixesadd=.n
+setl comments=://
+setl commentstring=//\ %s
+setl iskeyword+=@-@
+setl suffixesadd=.dh
 
 let b:undo_ftplugin = 'setl cms< com< fo< isk< sua<'
 
 " Follow the dither style guide by default.
 if get(g:, 'dither_recommended_style', 1)
-  setlocal expandtab
-  setlocal shiftwidth=2
-  setlocal softtabstop=2
-  setlocal tabstop=2
-  setlocal textwidth=80
+  setl expandtab
+  setl shiftwidth=2
+  setl softtabstop=2
+  setl tabstop=2
+  setl textwidth=80
   let b:undo_ftplugin .= ' et< sts< sw< ts< tw<'
 
   let s:root = expand('<sfile>:p:h:h')
-  execute 'setl tags+=' .. s:root .. '/tags/dither.tags'
-  execute 'setl dict+=' .. s:root .. '/tags/dither.dict'
-  execute 'setl dict+=' .. s:root .. '/tags/dither.base.dict'
+  exe 'setl tags+=' .. s:root .. '/tags/dither.tags'
+  "exe 'setl dict+=' .. s:root .. '/tags/dither.dict'
+  exe 'setl dict+=' .. s:root .. '/tags/dither.base.dict'
 endif
 
 fu! DeleteTrailingWS()
@@ -50,8 +50,8 @@ augroup dither.vim
   autocmd!
   " Highlight incorrect spacing by default.
   if get(g:, 'dither_space_error', 1)
-    autocmd InsertEnter * hi link ditherSpaceError NONE
-    autocmd InsertLeave * hi link ditherSpaceError Error
+    au InsertEnter * hi link ditherSpaceError NONE
+    au InsertLeave * hi link ditherSpaceError Error
   endif
 augroup END
 

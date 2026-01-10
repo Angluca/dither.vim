@@ -3,9 +3,9 @@ if exists("b:current_syntax")
 endif
 
 syn keyword ditherKeyword func embed
-syn keyword ditherKeyword def const static pub
+syn keyword ditherKeyword const static pub
 
-syn keyword ditherType bool char rchar byte void string ptrdiff untyped typed
+syn keyword ditherType bool char byte void string untyped typed
 syn keyword ditherType i8 i16 i32 i64 u8 u16 u32 u64
 syn keyword ditherType int uint isize usize
 syn keyword ditherType float f32 f64
@@ -20,30 +20,31 @@ syn keyword ditherSComment assert println print
 syn match   ditherNew      '\v<(new|[m]?alloc|create)>'
 syn match   ditherFree     '\v<(free)>'
 
-syn keyword ditherRepeat while loop for in to
+syn keyword ditherRepeat while for is do
 syn keyword ditherStatement break continue return defer
 syn keyword ditherConditional if else elif switch case
-syn keyword ditherInclude export include extern when foreign opaque
+syn keyword ditherInclude export include extern when
 
-syn keyword ditherException throw try catch cast unsafe raw
-syn keyword ditherPanic panic enforce
+syn keyword ditherException throw try catch cast
+syn keyword ditherPanic panic
 
 syn match ditherTitle      '[@!?]'
 syn match ditherSymbol     '[,;:\.]'
 syn match ditherOperator   '[\+\-\%=\/\^\&\*><\$|~]'
+syn match ditherOperator   '\v(\&\&|\|\|)'
 syn match ditherConstant   '[{}\[\]()]'
 syn match ditherType       '\v\(@<=\s*\w+\ze(\[.*\])*\s*\*+\s*\)' " (type*)
 syn match ditherType       '\v\[@<=\s*\w+\ze(\[.*\])*\s*\*+\s*\]' " [type*]
 syn match ditherType       '\v<\w+_[tscemui]>'
 syn match ditherMacro      '\v<[_]*\u[A-Z0-9_]*>'
 syn match ditherType       '\v<[_]*\u[A-Z0-9_]*[a-z]+\w*>'
-syn match ditherType       '\v\.?\zs<([iu][0-9]{1,3})?>'
+"syn match ditherType       '\v\.?\zs<([iu][0-9]{1,3})?>'
 syn match ditherRepeat     '\v([^\.](\.|\.{3}|::|-\>))@<=\w\w*'
 syn match ditherType       '\v<\w+>\ze(::|\<(\w+\s*(\<.*\>|\[.*\])?\s*[,]?\s*)*\>)' "foo<T>()
 syn match ditherFunc       '\v[_]*\l\w*\ze((\[.*\])|((::)?\<.*\>))*\s*\('
 
-syn match ditherException  '\v(\W@<=[~&!*]+\ze[\(\[\{\<]*[-]?\w)|(\w@<=[*!?]+\ze\W)'
-syn match ditherStruct     '\v((typedef|struct|enum|union|namespace)(\[.*\])?\s*)@<=[_]*\w+\ze(\[.*\])?\s*(\(|\{)'
+syn match ditherException  '\v(\W@<=[~&!*]+\ze[\(\[\{\<]*[-]?\w)|(\w@<=[*!?]+\ze(\W|\s))'
+"syn match ditherStruct     '\v((typedef|struct|enum|union|namespace)(\[.*\])?\s*)@<=[_]*\w+\ze(\[.*\])?\s*(\(|\{)'
 
 syn match ditherInclude    '\v^\s*include .*'
 syn match ditherMacro      '\v^\s*\[.{-}\]'
@@ -153,7 +154,7 @@ syn match   ditherTypedef  contains=ditherTypedef "\%([^[:cntrl:][:space:][:punc
 syn match   ditherFunc     "\%(r#\)\=\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*" display contained
 syn keyword ditherKeyword union enum typedef namespace nextgroup=ditherTypedef skipwhite skipempty
 syn keyword ditherKeyword union nextgroup=ditherType skipwhite skipempty contained
-syn keyword ditherMacro platform macro nextgroup=ditherTypedef skipwhite skipempty
+"syn keyword ditherMacro platform macro nextgroup=ditherTypedef skipwhite skipempty
 " adapted from neovim runtime/syntax
 syn keyword ditherTodo contained TODO FIXME XXX NOTE
 syn region  ditherComment  start="/\*" end="\*/" contains=ditherTodo,@Spell
